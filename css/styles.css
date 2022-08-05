@@ -348,9 +348,12 @@ img {
 }
 
 .team-social-list {
+	display: flex;
+	justify-content: center;
 }
+
 .team-social-item {
-	display: inline-block;
+	/* width: calc((100% - 3 * 10px) / 4); */
 	width: 44px;
 	height: 44px;
 
