@@ -245,12 +245,18 @@ img {
 	display: flex;
 }
 
-.features-item {
-	width: calc((100% - 3 * 30px) / 4);
-}
-
 .features-item:not(:last-child) {
 	margin-right: 30px;
+}
+
+.features-item-icon {
+	display: block;
+	margin-bottom: 30px;
+	padding: 25px 100px;
+	width: 270px;
+	height: 120px;
+	text-align: center;
+	background-color: var(--section-bg-color);
 }
 
 .feature-title {
