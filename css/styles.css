@@ -10,6 +10,7 @@
 	--secondary-bg-color: #2f303a;
 	--section-bg-color: #f5f4fa;
 	--link-color: rgba(255, 255, 255, 0.6);
+	--primary-icon-color: #afb1b8;
 }
 
 body {
@@ -142,7 +143,8 @@ img {
 }
 
 .contacts-link {
-	display: block;
+	display: flex;
+	align-items: center;
 
 	font-style: normal;
 	font-weight: 500;
@@ -154,6 +156,11 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
 	color: var(--accent-color);
+}
+
+.header-contact-icon {
+	fill: currentColor;
+	margin-right: 10px;
 }
 
 /* ---------- hero ---------- */
@@ -171,7 +178,7 @@ img {
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: auto;
+	background-size: cover;
 }
 
 .hero-title {
@@ -246,34 +253,6 @@ img {
 	margin-right: 30px;
 }
 
-.features-item::before {
-	display: block;
-	content: "";
-	height: 120px;
-	margin-bottom: 30px;
-
-	background-color: var(--section-bg-color);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 70px;
-}
-
-.icon-antenna::before {
-	background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-	background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-	background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-	background-image: url(../images/astronaut.svg);
-}
-
 .feature-title {
 	margin-bottom: 10px;
 
@@ -330,8 +309,7 @@ img {
 }
 
 .team-info {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding: 30px 32px;
 
 	text-align: center;
 }
@@ -356,7 +334,6 @@ img {
 	/* width: calc((100% - 3 * 10px) / 4); */
 	width: 44px;
 	height: 44px;
-
 	background-size: 20px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -367,7 +344,9 @@ img {
 	margin-right: 10px;
 }
 
-.instagram {
+.team-social-link {
+}
+/* .instagram {
 	background-image: url(../images/instagram.svg);
 }
 .twitter {
@@ -378,7 +357,7 @@ img {
 }
 .linkedin {
 	background-image: url(../images/linkedin.svg);
-}
+} */
 
 /* ---------- footer ---------- */
 .footer {
