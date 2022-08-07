@@ -429,6 +429,15 @@ img {
 	background-color: var(--secondary-bg-color);
 }
 
+.footer-info {
+	display: flex;
+	align-items: center;
+}
+
+.footer-contact {
+	margin-right: 70px;
+}
+
 .footer-logo {
 	color: var(--tertiary-text-color);
 }
@@ -437,12 +446,8 @@ img {
 	margin-top: 20px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
 	margin-bottom: 9px;
-}
-
-.footer-item:last-child {
-	margin-bottom: 0;
 }
 
 .footer-location,
@@ -468,6 +473,12 @@ img {
 	color: var(--accent-color);
 }
 
+.footer-socials {
+}
+.footer-socials-title {
+	font-size: 14px;
+	color: var(--tertiary-text-color);
+}
 /* ---------- portfolio ---------- */
 
 /* ---------- button ---------- */
